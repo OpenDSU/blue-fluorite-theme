@@ -25,7 +25,7 @@ div.global_container.is-mobile {
 
 aside {
   height: 100%;
-  background: url("/themes/dossier-explorer/images/nav-background.jpg") no-repeat left bottom;
+  background: url("/themes/blue-fluorite-theme/images/nav-background.jpg") no-repeat left bottom;
   background-color: #8395af;
   background-size:100% ;
   color: white;
@@ -34,7 +34,7 @@ aside {
   order: 1;
   flex: 1;
   min-width: 320px;
-  display: flex;
+  display: flex!important;
   flex-direction: column;
   overflow: auto;
   scrollbar-color: #4e73df #e5e5e5;
