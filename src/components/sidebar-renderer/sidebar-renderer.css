@@ -1,5 +1,3 @@
-
-
 :host {
     width: 100%;
     padding: 10px 0 10px 0;
@@ -29,7 +27,7 @@ span.icon {
     width: 100%;
     position: relative;
     padding: 20px 0 0 0;
-    border-top: 1px solid rgba(255, 255, 255, .15);
+    border-top: 1px solid rgba(255, 255, 255, .25);
 }
 
 a,
@@ -37,8 +35,9 @@ a span.icon,
 .item_container .item_name {
     color: rgba(255, 255, 255, .7);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1rem;
     cursor: pointer;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
 }
 
 a.active,
@@ -104,6 +103,6 @@ a.active span.icon {
     width: 100%;
 }
 
-.menu-loader{
-    text-align:center;
+.menu-loader {
+    text-align: center;
 }
