@@ -8,7 +8,7 @@ div.global_container {
 
 aside {
     height: 100%;
-    background: url("/assets/images/nav-background.jpg") no-repeat left bottom;
+    background: url("/themes/blue-fluorite-theme/images/nav-background.jpg") no-repeat left bottom;
     background-color: #8395af;
     background-size: 100%;
     color: white;
@@ -17,7 +17,7 @@ aside {
     order: 1;
     flex: 1;
     min-width: 320px;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     overflow: auto;
     scrollbar-color: #4e73df #e5e5e5;
@@ -110,8 +110,13 @@ aside::-webkit-scrollbar-button {
         display: block;
         overflow: inherit;
         padding-top: 5px;
+        flex: 0;
+        flex-direction: row;
     }
     aside psk-user-profile {
         position: absolute;
+    }
+    .nav-footer {
+        display: none;
     }
 }
