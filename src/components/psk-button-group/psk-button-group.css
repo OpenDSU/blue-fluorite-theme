@@ -1,7 +1,7 @@
 .button-group-wrapper .list-group {
     position: absolute;
     top: 100%;
-    z-index: 1000;
+    z-index: 10000;
     display: none;
     margin: 0;
 }
@@ -15,7 +15,6 @@ psk-button-group[opened] .list-group {
 .button-group-wrapper .list-group,
 .trigger {
     padding: 0 1rem;
-    margin-left: 1rem;
     font-size: 1.1rem;
     color: #fff;
     text-align: center;
@@ -70,7 +69,7 @@ psk-button-group[opened] .dots-menu .list-group {
 
 psk-button-group.modal-buttons {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
 }
@@ -86,6 +85,9 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
 }
 
 @media screen and (min-width: 960px) {
+    .list-group {
+        margin-left: 1rem;
+    }
     .add-menu .btn-menu,
     .add-menu .btn-menu button {
         display: flex;
@@ -109,7 +111,7 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
         bottom: 3rem;
         background: rgba(140, 140, 140, 0.75);
         border-radius: 50%;
-        z-index: 1;
+        z-index: 9998;
     }
     psk-button-group div.button-group-wrapper.add-menu .trigger {
         font-size: 0;
@@ -131,6 +133,18 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
         color: rgb(87, 42, 87) !important;
         font-size: 3rem;
         font-weight: 100;
+    }
+    psk-button-group[opened] div.button-group-wrapper.add-menu .trigger {
+        background: rgba(0, 0, 0, 0.2);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 9999;
+        left: 0;
+    }
+    psk-button-group[opened] div.button-group-wrapper.add-menu .trigger>* {
+        display: none;
     }
     psk-button-group[opened] .add-menu .list-group {
         display: flex;
