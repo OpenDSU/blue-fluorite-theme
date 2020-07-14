@@ -134,6 +134,8 @@
     right: 0px;
     padding: 1rem 2rem 1rem 1rem;
     font-size: 1.5rem;
+    opacity: 1;
+    z-index: 2;
 }
 
 .btn-switch,
@@ -169,12 +171,6 @@ div.menu-icons div.dots-menu div.list-group button.btn-menu {
     margin: 0.5rem 0;
     justify-content: flex-start;
     align-items: center;
-}
-
-.bottom-border {
-    border-bottom: 1px solid #fff;
-    margin-bottom: 0;
-    padding-bottom: 0.25rem;
 }
 
 .btn-csb-new {
@@ -216,7 +212,7 @@ div.menu-icons div.dots-menu div.list-group button.btn-menu {
 
 @media (max-width: 959px) {
     .btn-exit {
-        top: 106px;
+        top: 4rem;
     }
 }
 
@@ -244,4 +240,34 @@ div.menu-icons div.dots-menu div.list-group button.btn-menu {
     justify-content: center;
     align-items: center;
     width: 80%;
+}
+
+.navigation-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.navigation-links button {
+    opacity: 0.8;
+}
+
+.navigation-links button[disabled] {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.navigation-links psk-label:last-of-type {
+    display: none;
+}
+
+@media screen and (max-width: 959px) {
+    .navigation-links {
+        margin: 4.5rem 0.5rem 0.5rem;
+    }
 }

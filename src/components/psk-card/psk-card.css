@@ -21,6 +21,10 @@ psk-card.page-title .card .card-header {
     padding: 2rem 4rem;
 }
 
+psk-page div.card-body {
+    padding: 0;
+}
+
 .card-header h5 {
     width: 100%;
     color: #5076b3;
@@ -58,17 +62,79 @@ psk-card.page-title .card .card-header {
     }
 }
 
+@media screen and (max-width:959px) {
+    div.card.psk-card div.card-header {
+        display: none;
+    }
+}
+
 
 /*** Special selectors ***/
 
 
 /** wallet-grid **/
 
-.wallet-grid-container {
+.wallet-grid-container,
+.wallet-list-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 70vh;
+    scrollbar-color: #572a57 #e5e5e5;
+    scrollbar-width: thin;
+}
+
+.wallet-grid-container::-webkit-scrollbar,
+.wallet-list-container::-webkit-scrollbar {
+    background-color: #fff;
+    width: 8px;
+}
+
+
+/* background of the scrollbar except button or resizer */
+
+.wallet-grid-container::-webkit-scrollbar-track,
+.wallet-list-container::-webkit-scrollbar-track {
+    background-color: #e5e5e5;
+}
+
+
+/* scrollbar itself */
+
+.wallet-grid-container::-webkit-scrollbar-thumb,
+.wallet-list-container::-webkit-scrollbar-thumb {
+    background-color: #572a57;
+    border-radius: 8px;
+    border: 2px solid #fff;
+}
+
+
+/* set button(top and bottom of the scrollbar) */
+
+.wallet-grid-container::-webkit-scrollbar-button,
+.wallet-list-container::-webkit-scrollbar-button {
+    display: none;
+}
+
+.wallet-grid-container,
+.wallet-list-container {
     display: flex;
-    flex-wrap: wrap;
     flex: 0 0 100%;
     max-width: 100%;
+    padding: 0 1rem;
+}
+
+.wallet-grid-container {
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.wallet-list-container {
+    flex-direction: column;
+}
+
+.wallet-list-header {
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
 .wallet-grid-container psk-card .card-body {

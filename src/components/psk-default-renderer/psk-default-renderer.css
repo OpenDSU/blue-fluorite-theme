@@ -119,4 +119,7 @@ aside::-webkit-scrollbar-button {
     .nav-footer {
         display: none;
     }
+    section {
+        overflow: hidden;
+    }
 }

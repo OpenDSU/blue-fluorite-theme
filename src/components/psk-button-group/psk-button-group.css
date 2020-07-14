@@ -9,17 +9,17 @@
 psk-button-group[opened] .list-group {
     display: block;
     visibility: visible;
-    top: -10px;
     bottom: auto;
 }
 
 .button-group-wrapper .list-group,
 .trigger {
     padding: 0 1rem;
+    margin-left: 1rem;
     font-size: 1.1rem;
     color: #fff;
     text-align: center;
-    background-color: #572a57;
+    background-color: rgba(87, 42, 87, 1);
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0.25rem;
@@ -51,14 +51,14 @@ psk-button-group[opened] .list-group {
 psk-button-group[opened] .add-menu .list-group {
     left: 0px;
     right: auto;
-    transform: translate3d(0px, 3rem, 0px);
+    transform: translate3d(0px, -2px, 0px);
     will-change: transform;
 }
 
 psk-button-group[opened] .dots-menu .list-group {
     left: auto;
     right: 0px;
-    transform: translate3d(0rem, 2.5rem, 0px);
+    transform: translate3d(0rem, -2px, 0px);
     will-change: transform;
     min-width: 10rem;
     margin: 0;
@@ -83,4 +83,99 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-primary,
 psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
     padding: 0.25rem 1rem;
     min-width: 12em;
+}
+
+@media screen and (min-width: 960px) {
+    .add-menu .btn-menu,
+    .add-menu .btn-menu button {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    .add-menu .btn-menu button {
+        padding: 0;
+    }
+    .add-menu psk-files-chooser {
+        border: none !important;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    psk-button-group[classes="add-menu"] {
+        display: flex;
+        flex: 1 1 100%;
+        position: fixed;
+        right: 3rem;
+        bottom: 3rem;
+        background: rgba(140, 140, 140, 0.75);
+        border-radius: 50%;
+        z-index: 1;
+    }
+    psk-button-group div.button-group-wrapper.add-menu .trigger {
+        font-size: 0;
+        width: 4rem;
+        height: 4rem;
+        padding: 0;
+        margin: 0;
+        border-radius: 0.5rem;
+        background: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    psk-button-group div.button-group-wrapper.add-menu label {
+        font-weight: bold;
+    }
+    psk-button-group div.button-group-wrapper.add-menu .trigger span.icon {
+        color: rgb(87, 42, 87) !important;
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    psk-button-group[opened] .add-menu .list-group {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: unset;
+        right: unset;
+        flex: 1 1 100%;
+        width: 100%;
+        transform: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2rem;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+    psk-button-group[opened] .add-menu .list-group .btn-menu {
+        display: flex;
+        flex: 1 1 33.33333%;
+        max-width: 31%;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(87, 42, 87);
+        border: none;
+    }
+    psk-button-group[opened] .add-menu .list-group .btn-menu button.btn.btn-secondary,
+    psk-button-group[opened] .add-menu .list-group .btn-menu button.btn.btn-secondary label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    psk-button-group[opened] psk-files-chooser {
+        border: none !important;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    psk-button-group[opened] .add-menu .list-group .btn-menu {
+        display: flex;
+        flex: 1 1 50%;
+        max-width: 40%;
+    }
 }
