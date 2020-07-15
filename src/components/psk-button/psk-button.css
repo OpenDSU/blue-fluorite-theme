@@ -266,27 +266,19 @@ div.menu-icons div.dots-menu div.list-group button.btn-menu {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    background: #fff;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+    color: rgba(80, 118, 179, 0.8);
+    background: #e9e8e8;
+    padding: 0.75rem 1.25rem;
+    margin: 0 0 2rem 0;
     font-size: 1.1rem;
-}
-
-.navigation-links button {
-    opacity: 0.8;
+    line-height: 2.8rem;
 }
 
 .navigation-links button[disabled] {
-    opacity: 1;
     font-weight: bold;
+    color: rgba(80, 118, 179, 1);
 }
 
 .navigation-links psk-label:last-of-type {
     display: none;
-}
-
-@media screen and (max-width: 959px) {
-    .navigation-links {
-        margin: 4.5rem 0.5rem 0.5rem;
-    }
 }

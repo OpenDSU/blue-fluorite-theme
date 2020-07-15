@@ -9,12 +9,8 @@ psk-card,
     border: none;
 }
 
-psk-card.page-title .card .card-header {
-    background: #e9e8e8;
-}
-
 .card-header {
-    background-color: #eee;
+    background: #e9e8e8;
 }
 
 .card-body {
