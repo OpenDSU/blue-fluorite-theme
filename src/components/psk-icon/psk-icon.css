@@ -6,6 +6,15 @@ span.icon {
     color: #572a57;
 }
 
+.btn-exit span.icon {
+    color: rgba(250, 250, 250, 0.7);
+    font-size: 1.3rem;
+}
+
+.btn-exit:hover span.icon {
+    color: rgba(250, 250, 250, 1);
+}
+
 .clipboard span.icon {
     font-size: 1.2rem;
     vertical-align: middle;

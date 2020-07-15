@@ -109,6 +109,43 @@
     background: rgba(87, 42, 87, 0.7);
 }
 
+
+/* Exit button from left menu */
+
+.exit-wrapper {
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.exit-wrapper>psk-button {
+    border-top: 1px solid rgba(255, 255, 255, .25);
+    position: relative;
+    padding: 20px 0 0 0;
+    display: block;
+}
+
+.btn-exit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-exit:hover {
+    color: rgba(250, 250, 250, 1);
+}
+
+
+/* End Exit button */
+
 .btn-run {
     border-radius: 5px;
     border-width: 0px;
@@ -124,18 +161,6 @@
 .btn-run:visited,
 .btn-run:active:focus {
     background-color: #e3cbff;
-}
-
-.btn-exit {
-    border: none;
-    position: absolute;
-    background: none;
-    top: 0px;
-    right: 0px;
-    padding: 1rem 2rem 1rem 1rem;
-    font-size: 1.5rem;
-    opacity: 1;
-    z-index: 2;
 }
 
 .btn-switch,
@@ -208,12 +233,6 @@ div.menu-icons div.dots-menu div.list-group button.btn-menu {
 :host(.copy-clipboard):focus span.fa-clipboard,
 :host(.copy-clipboard):active:focus span.fa-clipboard {
     color: #FFF !important;
-}
-
-@media (max-width: 959px) {
-    .btn-exit {
-        top: 4rem;
-    }
 }
 
 .cd-link {
