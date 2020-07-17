@@ -10,7 +10,7 @@ div.form-group {
     width: 100%;
 }
 
-psk-files-chooser label,
+psk-files-chooser.btn-menu .btn.btn-secondary label,
 psk-label {
     padding: 0.25rem calc(0.175rem + 1px);
 }
