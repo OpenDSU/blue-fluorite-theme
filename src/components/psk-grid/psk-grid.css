@@ -8,18 +8,15 @@ div.row {
     margin: 0;
 }
 
-.items div.row>* {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 psk-grid label.col-form-label {
     display: inline;
     justify-content: flex-start;
     align-items: center;
     flex: 0 0 auto;
+}
+
+.wallet-list-header div.row {
+    align-items: center;
 }
 
 .wallet-list-header psk-button .btn {
@@ -28,9 +25,8 @@ psk-grid label.col-form-label {
     padding: 0 0 0 0.25rem;
 }
 
-psk-grid.items psk-grid {
-    display: flex;
-    justify-content: space-between;
+.navigation-links+psk-grid {
+    min-height: 2rem;
 }
 
 @media (max-width: 575px) {

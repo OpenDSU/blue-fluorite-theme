@@ -41,23 +41,51 @@
     padding-top: 0.5rem;
 }
 
-.wallet-path psk-grid {
+button.wallet-path {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 0 0 auto;
+    flex: 1;
+    width: 100%;
+    min-height: 3rem;
+    text-align: unset;
 }
 
-.wallet-path psk-grid.items {
+.wallet-path .items {
     display: inline;
     justify-content: flex-start;
     align-items: center;
-    flex: 0 0 auto;
+    flex: 1;
 }
 
 :host button.btn:disabled {
     color: #b1b1b1;
 }
+
+
+/** Sort buttons **/
+
+psk-button.btn-sort,
+.wallet-list-header {
+    margin: 0;
+    display: block;
+    padding: 0 2rem 1rem 2rem;
+}
+
+.wallet-list-header psk-button.btn-sort {
+    padding: 0;
+}
+
+button.btn-sort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+
+/** END Sort buttons **/
 
 :host button[class*="btn-confirm"] {
     width: 100%;
@@ -281,4 +309,16 @@ div.menu-icons div.dots-menu div.list-group button.btn-menu {
 
 .navigation-links psk-label:last-of-type {
     display: none;
+}
+
+@media screen and (min-width: 960px) {
+    .mobile-navigation {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .btn-switch {
+        display: none !important;
+    }
 }

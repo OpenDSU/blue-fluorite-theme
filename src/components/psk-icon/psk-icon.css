@@ -84,6 +84,11 @@ psk-icon[descending='true'] span.icon {
     color: #fff;
 }
 
+.icon-responsive span.icon {
+    border: none;
+    border-radius: unset;
+}
+
 div.menu-icons {
     display: flex;
     justify-content: flex-end;
@@ -107,11 +112,10 @@ div.menu-icons psk-icon {
 @media screen and (min-width: 960px) {
     .icon-responsive span.icon {
         width: 2rem;
-        height: 2rem;
+        height: 1rem;
         color: #fff;
         border-color: #fff;
-        padding: 0.25rem;
-        font-size: 1rem;
-        margin-right: 0.5rem;
+        padding: 0;
+        font-size: 0.9rem;
     }
 }
