@@ -1,15 +1,24 @@
-.button-group-wrapper .list-group {
-    position: absolute;
-    top: 100%;
-    z-index: 10000;
+.wallet-path psk-button-group {
     display: none;
+}
+
+.selected .wallet-path psk-button-group {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 0 1rem;
+}
+
+.button-group-wrapper .list-group {
+    position: fixed;
+    z-index: 10000;
+    visibility: hidden;
+    display: block;
     margin: 0;
 }
 
 psk-button-group[opened] .list-group {
-    display: block;
     visibility: visible;
-    bottom: auto;
 }
 
 .button-group-wrapper .list-group,
@@ -31,12 +40,12 @@ psk-button-group[opened] .list-group {
     height: 100%;
 }
 
-.button-group-wrapper.dots-menu .trigger {
+.dots-menu .trigger {
     background-color: transparent;
     border: none;
 }
 
-.button-group-wrapper.dots-menu .icon {
+.dots-menu .icon {
     font-size: 1.5rem;
     padding: 0;
 }
@@ -48,19 +57,16 @@ psk-button-group[opened] .list-group {
 }
 
 psk-button-group[opened] .add-menu .list-group {
-    left: 0px;
     right: auto;
-    transform: translate3d(0px, 2px, 0px);
+    transform: translate3d(0px, 3rem, 0px);
     will-change: transform;
 }
 
 psk-button-group[opened] .dots-menu .list-group {
-    left: auto;
-    right: 0px;
-    transform: translate3d(0rem, -2px, 0px);
-    will-change: transform;
     min-width: 10rem;
-    margin: 0;
+    right: 0;
+    margin-right: 1rem;
+    margin-top: -2rem;
 }
 
 .add-menu .list-group psk-files-chooser:last-of-type {
@@ -106,7 +112,7 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
 }
 
 @media screen and (max-width: 959px) {
-    psk-button-group[classes="add-menu"] {
+    psk-button-group.add-menu {
         display: flex;
         flex: 1 1 100%;
         position: fixed;

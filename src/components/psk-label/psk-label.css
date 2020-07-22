@@ -10,6 +10,19 @@ div.form-group {
     width: 100%;
 }
 
+.item-wrapper,
+.item-wrapper>.col-form-label,
+.info-wrapper,
+.info-wrapper>.col-form-label {
+    display: flex;
+    width: 100%;
+}
+
+.info-wrapper>.col-form-label {
+    justify-content: center;
+    align-items: center;
+}
+
 psk-files-chooser.btn-menu .btn.btn-secondary label,
 psk-label {
     padding: 0.25rem calc(0.175rem + 1px);
@@ -142,7 +155,7 @@ psk-modal psk-for-each {
     padding: 0.5rem 0px;
 }
 
-psk-modal psk-for-each.wallet-list-container {
+psk-modal psk-for-each.wallet-container {
     flex-direction: column;
 }
 
@@ -172,4 +185,25 @@ psk-modal.asset-modal object {
 
 psk-modal.asset-modal[expanded="true"] .content {
     height: 70vh;
+}
+
+psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 959px) {
+    .info-wrapper>.col-form-label,
+    psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .info-wrapper>.col-form-label .name-wrapper label {
+        font-size: 1.15rem;
+    }
+    .info-wrapper>.col-form-label psk-date label {
+        font-size: 0.8rem;
+    }
 }

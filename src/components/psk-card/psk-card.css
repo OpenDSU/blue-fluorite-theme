@@ -70,8 +70,7 @@ psk-page div.card-body {
 
 /** wallet-grid **/
 
-.wallet-grid-container,
-.wallet-list-container {
+.wallet-container {
     overflow-y: auto;
     overflow-x: hidden;
     max-height: 70vh;
@@ -79,8 +78,7 @@ psk-page div.card-body {
     scrollbar-width: thin;
 }
 
-.wallet-grid-container::-webkit-scrollbar,
-.wallet-list-container::-webkit-scrollbar {
+.wallet-container::-webkit-scrollbar {
     background-color: #fff;
     width: 8px;
 }
@@ -88,16 +86,14 @@ psk-page div.card-body {
 
 /* background of the scrollbar except button or resizer */
 
-.wallet-grid-container::-webkit-scrollbar-track,
-.wallet-list-container::-webkit-scrollbar-track {
+.wallet-container::-webkit-scrollbar-track {
     background-color: #e5e5e5;
 }
 
 
 /* scrollbar itself */
 
-.wallet-grid-container::-webkit-scrollbar-thumb,
-.wallet-list-container::-webkit-scrollbar-thumb {
+.wallet-container::-webkit-scrollbar-thumb {
     background-color: #572a57;
     border-radius: 8px;
     border: 2px solid #fff;
@@ -106,92 +102,32 @@ psk-page div.card-body {
 
 /* set button(top and bottom of the scrollbar) */
 
-.wallet-grid-container::-webkit-scrollbar-button,
-.wallet-list-container::-webkit-scrollbar-button {
+.wallet-container::-webkit-scrollbar-button {
     display: none;
 }
 
-.wallet-grid-container,
-.wallet-list-container {
+.wallet-container {
     display: flex;
     flex: 0 0 100%;
     max-width: 100%;
     padding: 0 1rem;
 }
 
-.wallet-grid-container {
-    flex-wrap: wrap;
-}
-
-.wallet-list-container {
+.wallet-container {
     flex-direction: column;
 }
 
-.wallet-list-header {
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-.wallet-grid-container psk-card .card-body {
-    padding: 0.25rem 0.75rem;
-    border: 1px solid #572a57;
-    border-radius: 10px;
-    background-color: #ffffff;
-    margin: 1rem 3rem 1rem 0;
-}
-
-.wallet-grid-container psk-card {
-    position: relative;
-    flex: 0 0 25%;
-    max-width: 25%;
-}
-
-.wallet-grid-container .selected .card-body,
-.wallet-list-container .selected .card-body {
+.wallet-container .selected .card-body {
     background-color: #e3cbff;
 }
 
-.wallet-list-container .card-body {
+.wallet-container .card-body {
     padding: 0;
     color: rgb(130, 130, 130);
     font-weight: 400;
     background-color: #fff;
     border-radius: 0.25rem;
     box-shadow: 0px 0px 2.5px rgba(150, 150, 150, 0.75);
-}
-
-.wallet-grid-container psk-card :not(psk-button)>psk-icon span.icon {
-    font-size: 20px;
-}
-
-@media (max-width: 1499px) {
-    .wallet-grid-container psk-card {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-    }
-}
-
-@media (max-width: 1199px) {
-    .wallet-grid-container psk-card {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    .wallet-grid-container psk-card:nth-child(2n) .card-body {
-        margin: 1rem 1rem 0 3rem;
-    }
-    .wallet-grid-container psk-card:nth-child(2n + 1) .card-body {
-        margin: 1rem 3rem 0 0;
-    }
-}
-
-@media (max-width: 575px) {
-    .wallet-grid-container psk-card {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .wallet-grid-container psk-card .card-body {
-        margin: 1.5rem 1rem !important;
-    }
 }
 
 
@@ -251,15 +187,15 @@ psk-page div.card-body {
     width: 100%;
 }
 
-.move-modal .wallet-list-header {
+.move-modal .wallet-header {
     padding: 0.375rem 0.75rem;
 }
 
-.move-modal .wallet-list-header span.icon {
+.move-modal .wallet-header span.icon {
     padding: 0.5rem;
 }
 
-.move-modal .wallet-list-container {
+.move-modal .wallet-container {
     height: 30vh;
     overflow: auto;
 }

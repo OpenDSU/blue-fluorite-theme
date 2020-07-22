@@ -49,6 +49,7 @@ button.wallet-path {
     width: 100%;
     min-height: 3rem;
     text-align: unset;
+    padding: 0 1rem;
 }
 
 .wallet-path .items {
@@ -65,23 +66,17 @@ button.wallet-path {
 
 /** Sort buttons **/
 
-psk-button.btn-sort,
-.wallet-list-header {
-    margin: 0;
-    display: block;
-    padding: 0 2rem 1rem 2rem;
-}
-
-.wallet-list-header psk-button.btn-sort {
+psk-button.btn-sort {
     padding: 0;
 }
 
 button.btn-sort {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     line-height: 2rem;
     font-weight: bold;
+    width: 100%;
 }
 
 
@@ -175,12 +170,9 @@ button.btn-sort {
 /* End Exit button */
 
 .btn-run {
-    border-radius: 5px;
-    border-width: 0px;
-    box-shadow: 0px 0px 2px #572a57;
     margin-left: 0.5rem;
     padding: 0 0.5rem;
-    background-color: #ffffff;
+    display: inline;
 }
 
 .btn-run:hover,
@@ -191,14 +183,6 @@ button.btn-sort {
     background-color: #e3cbff;
 }
 
-.btn-switch,
-.no-btn {
-    border: none;
-    background: none;
-    padding: 0.2rem 1.2rem 0.2rem 0.2rem;
-    font-size: 0;
-}
-
 .btn-menu {
     padding: 0.5rem 0;
     margin: 0;
@@ -206,6 +190,8 @@ button.btn-sort {
     border: none;
     color: #fff;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     height: 100%;
     font-size: 1rem;
@@ -317,8 +303,18 @@ div.menu-icons div.dots-menu div.list-group button.btn-menu {
     }
 }
 
-@media screen and (max-width: 959px) {
-    .btn-switch {
-        display: none !important;
-    }
+psk-button[data-type] {
+    display: none;
+}
+
+.selected[data-type="file"] psk-button[data-type="file"] {
+    display: inline;
+}
+
+.selected[data-type="folder"] psk-button[data-type="folder"] {
+    display: inline;
+}
+
+.selected[data-type="mount"] psk-button[data-type="mount"] {
+    display: inline;
 }

@@ -8,6 +8,10 @@ div.row {
     margin: 0;
 }
 
+.content-wrapper label.col-form-label {
+    font-weight: bold;
+}
+
 psk-grid label.col-form-label {
     display: inline;
     justify-content: flex-start;
@@ -15,11 +19,20 @@ psk-grid label.col-form-label {
     flex: 0 0 auto;
 }
 
-.wallet-list-header div.row {
+.wallet-header {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.wallet-header div.row {
     align-items: center;
 }
 
-.wallet-list-header psk-button .btn {
+.wallet-header psk-button .btn {
     font-weight: bold;
     text-align: left;
     padding: 0 0 0 0.25rem;
@@ -102,5 +115,44 @@ psk-grid label.col-form-label {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+
+.btn-switch-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+psk-grid[data-grid-layout="true"] [data-hide-grid] {
+    display: none !important;
+}
+
+psk-grid.add-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+psk-grid[data-grid-layout="true"] psk-card {
+    max-width: 32%;
+    margin: 1rem 0.5rem;
+}
+
+@media screen and (max-width: 959px) {
+    .btn-switch-wrapper {
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .wallet-header {
+        margin-top: -3rem;
+    }
+    [data-hide-mobile] {
+        display: none !important;
+    }
+    .wallet-path span.icon {
+        font-size: 2rem;
+        width: 2rem;
     }
 }
