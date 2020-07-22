@@ -159,6 +159,10 @@ psk-modal psk-for-each {
     padding: 0.5rem 0px;
 }
 
+psk-modal .content-wrapper {
+    flex-direction: column;
+}
+
 psk-modal psk-for-each.wallet-container {
     flex-direction: column;
 }
