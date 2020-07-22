@@ -8,10 +8,6 @@ div.row {
     margin: 0;
 }
 
-.content-wrapper label.col-form-label {
-    font-weight: bold;
-}
-
 psk-grid label.col-form-label {
     display: inline;
     justify-content: flex-start;
@@ -36,6 +32,11 @@ psk-grid label.col-form-label {
     font-weight: bold;
     text-align: left;
     padding: 0 0 0 0.25rem;
+}
+
+.info-wrapper label.col-form-label,
+.wallet-header label.col-form-label {
+    font-weight: bold;
 }
 
 .navigation-links+psk-grid {
@@ -118,14 +119,14 @@ psk-grid label.col-form-label {
     }
 }
 
+psk-grid[data-grid-layout="true"] .col-6 {
+    max-width: unset !important;
+}
+
 .btn-switch-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-psk-grid[data-grid-layout="true"] [data-hide-grid] {
-    display: none !important;
 }
 
 psk-grid.add-menu {
@@ -135,9 +136,8 @@ psk-grid.add-menu {
     align-items: center;
 }
 
-psk-grid[data-grid-layout="true"] psk-card {
-    max-width: 32%;
-    margin: 1rem 0.5rem;
+psk-grid[data-grid-layout="true"] [data-hide-grid] {
+    display: none !important;
 }
 
 @media screen and (max-width: 959px) {
@@ -150,9 +150,5 @@ psk-grid[data-grid-layout="true"] psk-card {
     }
     [data-hide-mobile] {
         display: none !important;
-    }
-    .wallet-path span.icon {
-        font-size: 2rem;
-        width: 2rem;
     }
 }

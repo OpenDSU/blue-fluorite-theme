@@ -1,8 +1,4 @@
 .wallet-path psk-button-group {
-    display: none;
-}
-
-.selected .wallet-path psk-button-group {
     display: block;
     position: absolute;
     right: 0;

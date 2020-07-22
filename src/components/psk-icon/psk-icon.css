@@ -128,9 +128,23 @@ div.menu-icons psk-icon {
     margin-right: 2rem;
 }
 
-.wallet-path span.icon {
+.wallet-path>psk-icon span.icon {
     font-size: 1.1rem;
-    width: 1rem;
-    text-align: center;
-    vertical-align: middle;
+    width: 1.1rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 959px) {
+    .wallet-path>psk-icon span.icon {
+        font-size: 1.5rem;
+        width: 1.5rem;
+    }
+    psk-grid[data-grid-layout="true"] .wallet-path>psk-icon span.icon {
+        font-size: 1.1rem;
+        width: 1.1rem;
+    }
+    psk-grid[data-grid-layout="true"] .wallet-path>psk-icon span.icon {
+        font-size: 6rem;
+        width: 6rem;
+    }
 }

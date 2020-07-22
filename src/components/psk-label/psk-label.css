@@ -23,7 +23,7 @@ div.form-group {
     align-items: center;
 }
 
-psk-files-chooser.btn-menu .btn.btn-secondary label,
+.btn-menu psk-files-chooser,
 psk-label {
     padding: 0.25rem calc(0.175rem + 1px);
 }
@@ -31,6 +31,10 @@ psk-label {
 psk-label,
 label {
     max-width: 100%;
+}
+
+.selected .info-wrapper label.col-form-label {
+    color: #8197bc;
 }
 
 psk-button psk-label,
@@ -187,10 +191,12 @@ psk-modal.asset-modal[expanded="true"] .content {
     height: 70vh;
 }
 
-psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+psk-grid[data-grid-layout="true"] .info-wrapper label.col-form-label {
+    font-size: inherit;
+}
+
+psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label .name-wrapper.col-6 {
+    padding: 0;
 }
 
 @media screen and (max-width: 959px) {
@@ -200,10 +206,22 @@ psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label {
         justify-content: center;
         align-items: flex-start;
     }
+    psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label {
+        margin-left: -0.5rem;
+    }
+    .info-wrapper label.col-form-label,
+    .wallet-header label.col-form-label {
+        width: 100%;
+        display: inline-block;
+    }
     .info-wrapper>.col-form-label .name-wrapper label {
         font-size: 1.15rem;
     }
-    .info-wrapper>.col-form-label psk-date label {
+    .info-wrapper>.col-form-label .name-wrapper.col-6,
+    psk-date.col-4 {
+        padding: 0;
+    }
+    psk-date label {
         font-size: 0.8rem;
     }
 }

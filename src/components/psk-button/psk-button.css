@@ -318,3 +318,13 @@ psk-button[data-type] {
 .selected[data-type="mount"] psk-button[data-type="mount"] {
     display: inline;
 }
+
+@media screen and (max-width: 959px) {
+    psk-grid[data-grid-layout="true"] button.wallet-path {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        background: none;
+        border: none;
+    }
+}
