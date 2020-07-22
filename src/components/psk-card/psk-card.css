@@ -159,15 +159,19 @@ psk-grid[data-grid-layout="true"] psk-card {
         border: none;
         box-shadow: none;
     }
-}
-
-@media screen and (min-width: 576px) and (max-width: 959px) {
-    psk-grid[data-grid-layout="true"] .wallet-container {
-        justify-content: flex-start;
-    }
     psk-grid[data-grid-layout="true"] psk-card {
         flex: 0 0 20%;
         max-width: 20%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    psk-grid[data-grid-layout="true"] psk-card {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+    psk-grid[data-grid-layout="true"] .wallet-container {
+        justify-content: space-between;
     }
 }
 

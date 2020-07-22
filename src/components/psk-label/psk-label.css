@@ -199,9 +199,14 @@ psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label .name-wrapper.co
     padding: 0;
 }
 
+psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 @media screen and (max-width: 959px) {
-    .info-wrapper>.col-form-label,
-    psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label {
+    .info-wrapper>.col-form-label {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -218,10 +223,10 @@ psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label .name-wrapper.co
         font-size: 1.15rem;
     }
     .info-wrapper>.col-form-label .name-wrapper.col-6,
-    psk-date.col-4 {
+    .info-wrapper>.col-form-label psk-date.col-4 {
         padding: 0;
     }
-    psk-date label {
+    .info-wrapper>.col-form-label psk-date label {
         font-size: 0.8rem;
     }
 }

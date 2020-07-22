@@ -307,15 +307,15 @@ psk-button[data-type] {
     display: none;
 }
 
-.selected[data-type="file"] psk-button[data-type="file"] {
+[data-type="file"] psk-button[data-type="file"] {
     display: inline;
 }
 
-.selected[data-type="folder"] psk-button[data-type="folder"] {
+[data-type="folder"] psk-button[data-type="folder"] {
     display: inline;
 }
 
-.selected[data-type="mount"] psk-button[data-type="mount"] {
+[data-type="mount"] psk-button[data-type="mount"] {
     display: inline;
 }
 

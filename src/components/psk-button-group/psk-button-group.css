@@ -59,10 +59,11 @@ psk-button-group[opened] .add-menu .list-group {
 }
 
 psk-button-group[opened] .dots-menu .list-group {
-    min-width: 10rem;
+    position: absolute;
+    min-width: 15rem;
+    margin: 0;
+    top: -3rem;
     right: 0;
-    margin-right: 1rem;
-    margin-top: -2rem;
 }
 
 .add-menu .list-group psk-files-chooser:last-of-type {
