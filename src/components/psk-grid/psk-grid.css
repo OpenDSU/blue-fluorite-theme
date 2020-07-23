@@ -136,8 +136,20 @@ psk-grid.add-menu {
     align-items: center;
 }
 
+[data-hide-list] {
+    display: none !important;
+}
+
+[data-hide-grid] {
+    display: inherit !important;
+}
+
 psk-grid[data-grid-layout="true"] [data-hide-grid] {
     display: none !important;
+}
+
+psk-grid[data-grid-layout="true"] [data-hide-list] {
+    display: inherit !important;
 }
 
 @media screen and (max-width: 959px) {
@@ -146,7 +158,7 @@ psk-grid[data-grid-layout="true"] [data-hide-grid] {
         justify-content: flex-end;
     }
     .wallet-header {
-        margin-top: -3rem;
+        margin-top: -2rem;
     }
     [data-hide-mobile] {
         display: none !important;
