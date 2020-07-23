@@ -153,6 +153,9 @@ psk-grid[data-grid-layout="true"] psk-card {
 }
 
 @media screen and (max-width: 959px) {
+    psk-grid[data-grid-layout="true"] .wallet-container {
+        padding: 0;
+    }
     psk-grid[data-grid-layout="true"] .wallet-container .card-body,
     psk-grid[data-grid-layout="true"] .wallet-container .selected .card-body {
         background: none;
@@ -162,16 +165,17 @@ psk-grid[data-grid-layout="true"] psk-card {
     psk-grid[data-grid-layout="true"] psk-card {
         flex: 0 0 20%;
         max-width: 20%;
+        margin: 0 0 1rem 2rem;
     }
 }
 
 @media screen and (max-width: 575px) {
     psk-grid[data-grid-layout="true"] psk-card {
-        flex: 0 0 45%;
-        max-width: 45%;
+        flex: 0 0 40%;
+        max-width: 40%;
     }
     psk-grid[data-grid-layout="true"] .wallet-container {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 

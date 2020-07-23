@@ -39,6 +39,7 @@ psk-button-group[opened] .list-group {
 .dots-menu .trigger {
     background-color: transparent;
     border: none;
+    margin-right: -1rem;
 }
 
 .dots-menu .icon {
@@ -50,6 +51,10 @@ psk-button-group[opened] .list-group {
 .trigger {
     cursor: pointer;
     text-decoration: none;
+}
+
+.add-menu .trigger span.icon {
+    margin-right: 0.75rem;
 }
 
 psk-button-group[opened] .add-menu .list-group {
@@ -139,6 +144,7 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
         color: rgb(87, 42, 87) !important;
         font-size: 3rem;
         font-weight: 100;
+        margin: 0;
     }
     psk-button-group[opened] div.button-group-wrapper.add-menu .trigger {
         background: rgba(0, 0, 0, 0.2);

@@ -322,7 +322,7 @@ psk-button[data-type] {
 @media screen and (max-width: 959px) {
     psk-grid[data-grid-layout="true"] button.wallet-path {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 0;
         background: none;
         border: none;

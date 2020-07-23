@@ -158,7 +158,8 @@ psk-grid[data-grid-layout="true"] [data-hide-list] {
         justify-content: flex-end;
     }
     .wallet-header {
-        margin-top: -2rem;
+        margin-top: -3rem;
+        margin-bottom: 1rem;
     }
     [data-hide-mobile] {
         display: none !important;

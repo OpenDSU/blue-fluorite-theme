@@ -195,6 +195,16 @@ psk-modal.asset-modal[expanded="true"] .content {
     height: 70vh;
 }
 
+.info-wrapper>.col-form-label .name-wrapper .col-form-label .col-form-label {
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 psk-grid[data-grid-layout="true"] .info-wrapper label.col-form-label {
     font-size: inherit;
 }
@@ -230,7 +240,13 @@ psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label {
     .info-wrapper>.col-form-label psk-date.col-4 {
         padding: 0;
     }
+    .info-wrapper>.col-form-label .name-wrapper.col-6 {
+        width: 0;
+    }
     .info-wrapper>.col-form-label psk-date label {
         font-size: 0.8rem;
+    }
+    psk-grid[data-grid-layout="true"] .name-wrapper .col-form-label .col-form-label {
+        text-align: center;
     }
 }
