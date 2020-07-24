@@ -58,127 +58,6 @@ psk-page div.card-body {
     }
 }
 
-@media screen and (max-width:959px) {
-    div.card.psk-card div.card-header {
-        display: none;
-    }
-}
-
-
-/*** Special selectors ***/
-
-
-/** wallet-grid **/
-
-.wallet-container {
-    overflow-y: auto;
-    overflow-x: hidden;
-    max-height: 70vh;
-    scrollbar-color: #572a57 #e5e5e5;
-    scrollbar-width: thin;
-}
-
-.wallet-container::-webkit-scrollbar {
-    background-color: #fff;
-    width: 8px;
-}
-
-
-/* background of the scrollbar except button or resizer */
-
-.wallet-container::-webkit-scrollbar-track {
-    background-color: #e5e5e5;
-}
-
-
-/* scrollbar itself */
-
-.wallet-container::-webkit-scrollbar-thumb {
-    background-color: #572a57;
-    border-radius: 8px;
-    border: 2px solid #fff;
-}
-
-
-/* set button(top and bottom of the scrollbar) */
-
-.wallet-container::-webkit-scrollbar-button {
-    display: none;
-}
-
-.wallet-container {
-    display: flex;
-    flex: 0 0 100%;
-    max-width: 100%;
-    padding: 0 1rem;
-}
-
-.wallet-container {
-    flex-direction: column;
-}
-
-.wallet-container .selected .card-body {
-    background-color: #e3cbff;
-}
-
-.wallet-container .card-body {
-    padding: 0;
-    color: rgb(130, 130, 130);
-    font-weight: 400;
-    background-color: #fff;
-    border-radius: 0.25rem;
-    box-shadow: 0px 0px 2.5px rgba(150, 150, 150, 0.75);
-}
-
-psk-grid[data-grid-layout="true"] .wallet-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    flex: 1;
-}
-
-psk-grid[data-grid-layout="true"] psk-card {
-    flex: 0 0 20%;
-    max-width: 20%;
-    margin: 1rem 0.5rem;
-}
-
-@media screen and (max-width: 1599px) {
-    psk-grid[data-grid-layout="true"] psk-card {
-        flex: 0 0 30%;
-        max-width: 30%;
-        margin: 1rem 0.5rem;
-    }
-}
-
-@media screen and (max-width: 959px) {
-    psk-grid[data-grid-layout="true"] .wallet-container {
-        padding: 0;
-    }
-    psk-grid[data-grid-layout="true"] .wallet-container .card-body,
-    psk-grid[data-grid-layout="true"] .wallet-container .selected .card-body {
-        background: none;
-        border: none;
-        box-shadow: none;
-    }
-    psk-grid[data-grid-layout="true"] psk-card {
-        flex: 0 0 20%;
-        max-width: 20%;
-        margin: 0 0 1rem 2rem;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    psk-grid[data-grid-layout="true"] psk-card {
-        flex: 0 0 40%;
-        max-width: 40%;
-    }
-    psk-grid[data-grid-layout="true"] .wallet-container {
-        justify-content: space-around;
-    }
-}
-
 
 /** receive dossier **/
 
@@ -255,6 +134,6 @@ psk-grid[data-grid-layout="true"] psk-card {
 }
 
 .move-modal .items div.row psk-label {
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: flex-start;
 }

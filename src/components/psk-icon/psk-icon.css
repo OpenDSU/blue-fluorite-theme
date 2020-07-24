@@ -105,6 +105,10 @@ div.menu-icons psk-icon {
     padding: 0 1rem;
 }
 
+.add-menu .trigger span.icon {
+    margin-right: 0.75rem;
+}
+
 @media screen and (min-width: 960px) {
     .icon-responsive span.icon {
         width: 2rem;
@@ -135,6 +139,12 @@ div.menu-icons psk-icon {
 }
 
 @media screen and (max-width: 959px) {
+    psk-button-group div.button-group-wrapper.add-menu .trigger span.icon {
+        color: rgb(87, 42, 87) !important;
+        font-size: 3rem;
+        font-weight: 100;
+        margin: 0;
+    }
     .wallet-path>psk-icon span.icon {
         font-size: 1.5rem;
         width: 1.5rem;

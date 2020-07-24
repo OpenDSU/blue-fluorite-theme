@@ -297,12 +297,6 @@ div.menu-icons div.dots-menu div.list-group button.btn-menu {
     display: none;
 }
 
-@media screen and (min-width: 960px) {
-    .mobile-navigation {
-        display: none !important;
-    }
-}
-
 psk-button[data-type] {
     display: none;
 }

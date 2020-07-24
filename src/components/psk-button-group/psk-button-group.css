@@ -53,10 +53,6 @@ psk-button-group[opened] .list-group {
     text-decoration: none;
 }
 
-.add-menu .trigger span.icon {
-    margin-right: 0.75rem;
-}
-
 psk-button-group[opened] .add-menu .list-group {
     right: auto;
     transform: translate3d(0px, 3rem, 0px);
@@ -69,10 +65,6 @@ psk-button-group[opened] .dots-menu .list-group {
     margin: 0;
     top: -3rem;
     right: 0;
-}
-
-.add-menu .list-group psk-files-chooser:last-of-type {
-    border-bottom: 1px solid white;
 }
 
 psk-button-group.modal-buttons {
@@ -108,9 +100,6 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
     .add-menu .btn-menu button {
         padding: 0;
     }
-    .add-menu psk-files-chooser {
-        border: none !important;
-    }
 }
 
 @media screen and (max-width: 959px) {
@@ -139,12 +128,6 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
     }
     psk-button-group div.button-group-wrapper.add-menu label {
         font-weight: bold;
-    }
-    psk-button-group div.button-group-wrapper.add-menu .trigger span.icon {
-        color: rgb(87, 42, 87) !important;
-        font-size: 3rem;
-        font-weight: 100;
-        margin: 0;
     }
     psk-button-group[opened] div.button-group-wrapper.add-menu .trigger {
         background: rgba(0, 0, 0, 0.2);
@@ -192,9 +175,6 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
         justify-content: center;
         align-items: center;
         width: 100%;
-    }
-    psk-button-group[opened] psk-files-chooser {
-        border: none !important;
     }
 }
 

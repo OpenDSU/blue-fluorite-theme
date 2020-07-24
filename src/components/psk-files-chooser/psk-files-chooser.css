@@ -1,4 +1,3 @@
-
 input[type=file].form-control-sm {
     padding-left: 0;
     display: none;
@@ -8,9 +7,9 @@ label {
     cursor: pointer;
 }
 
-psk-files-chooser{
+psk-files-chooser {
     display: flex;
-    clear:both;
+    clear: both;
 }
 
 button.btn.btn-secondary,
@@ -19,15 +18,18 @@ button.btn.btn-secondary:focus,
 button.btn.btn-secondary:active,
 button.btn.btn-secondary:active:focus,
 button.btn.btn-secondary:not(:disabled):not(.disabled):active,
-button.btn.btn-secondary:not(:disabled):not(.disabled):active:focus{
+button.btn.btn-secondary:not(:disabled):not(.disabled):active:focus {
     background: transparent;
     border: none;
-    outline:none;
+    outline: none;
     box-shadow: none;
 }
-psk-files-chooser .btn{
+
+psk-files-chooser .btn {
     text-align: left;
     padding: 0 0 0 0.25rem;
 }
 
-
+.add-menu psk-files-chooser {
+    border: none;
+}

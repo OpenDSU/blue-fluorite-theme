@@ -172,6 +172,9 @@ psk-modal.move-modal psk-for-each psk-label {
     font-size: 1rem;
     line-height: 1.5rem;
     color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 psk-modal.asset-modal .content {
@@ -210,6 +213,7 @@ psk-grid[data-grid-layout="true"] .info-wrapper label.col-form-label {
 }
 
 psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label .name-wrapper.col-6 {
+    max-width: unset !important;
     padding: 0;
 }
 
