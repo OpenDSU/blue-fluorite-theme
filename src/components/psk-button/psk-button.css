@@ -203,15 +203,6 @@ button.btn-sort {
     margin: 0;
 }
 
-div.menu-icons div.dots-menu div.list-group button.btn-menu {
-    width: 100%;
-    height: auto;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .btn-csb-new {
     background-color: #616e7d;
     border-color: #4e5a69;
@@ -295,6 +286,15 @@ div.menu-icons div.dots-menu div.list-group button.btn-menu {
 
 .navigation-links psk-label:last-of-type {
     display: none;
+}
+
+.options-wrapper button.btn-menu {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 psk-button[data-type] {

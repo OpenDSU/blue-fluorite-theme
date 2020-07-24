@@ -120,6 +120,18 @@ div.menu-icons psk-icon {
     }
 }
 
+.options-menu-trigger psk-icon {
+    background-color: transparent;
+    border: none;
+    margin-right: -1rem;
+}
+
+.options-menu-trigger span.icon {
+    font-size: 1.5rem;
+    padding: 0;
+    width: 2rem;
+}
+
 .item-wrapper .btn-menu span.icon {
     color: #ffffff;
     font-size: 1rem;
