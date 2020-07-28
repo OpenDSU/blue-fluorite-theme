@@ -186,9 +186,7 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
 
 .options-wrapper {
     display: flex;
-    position: fixed;
-    bottom: 35%;
-    right: 10%;
+    position: absolute;
     top: unset;
     left: unset;
     flex: 1 1 100%;
@@ -202,16 +200,26 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
     border-radius: 0.5rem;
     z-index: 999999;
 }
+.options-wrapper .item-identifier{
+    display: none;
+}
 
 @media screen and (max-width:959px) {
     .options-menu {
         background: rgba(0, 0, 0, 0.5);
     }
     .options-wrapper {
-        right: 0;
-        bottom: 0;
-        width: 50%;
+        right: 0!important;
         border: none;
         border-radius: unset;
+        left: 0!important;
+        bottom: 0!important;
+        top: auto!important;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .options-wrapper .item-identifier{
+        display: block;
     }
 }

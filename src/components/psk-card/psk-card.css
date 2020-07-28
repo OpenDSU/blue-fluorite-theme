@@ -137,3 +137,24 @@ psk-page div.card-body {
     text-align: left;
     justify-content: flex-start;
 }
+
+psk-card.item-identifier{
+    border-bottom:1px solid #BBBB;
+}
+
+psk-card.item-identifier .card{
+    background: transparent;
+}
+psk-card.item-identifier .card .card-body{
+    padding-left: 5px;
+}
+
+psk-card.item-identifier .card .card-body psk-icon span{
+    font-size: 1.25rem;
+}
+
+psk-card.item-identifier psk-label label{
+    color:#777;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
