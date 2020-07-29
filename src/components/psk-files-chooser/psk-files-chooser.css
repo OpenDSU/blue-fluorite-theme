@@ -7,11 +7,6 @@ label {
     cursor: pointer;
 }
 
-psk-files-chooser {
-    display: flex;
-    clear: both;
-}
-
 button.btn.btn-secondary,
 button.btn.btn-secondary:hover,
 button.btn.btn-secondary:focus,
@@ -28,6 +23,7 @@ button.btn.btn-secondary:not(:disabled):not(.disabled):active:focus {
 psk-files-chooser .btn {
     text-align: left;
     padding: 0 0 0 0.25rem;
+    flex-direction: column;
 }
 
 .add-menu psk-files-chooser {
