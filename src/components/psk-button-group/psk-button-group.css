@@ -238,4 +238,13 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
     .options-wrapper .item-identifier{
         display: block;
     }
+
+    .options-menu button.btn-run{
+        border:1px solid #572a57;
+        background: #572a57;
+        color:#FFF;
+        padding:5px 10px;
+        border-radius: 3px;
+
+    }
 }

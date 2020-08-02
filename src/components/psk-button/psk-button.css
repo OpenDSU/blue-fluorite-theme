@@ -170,7 +170,7 @@ button.btn-sort {
 /* End Exit button */
 
 .btn-run {
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
     padding: 0 0.5rem;
     display: inline;
 }
@@ -180,7 +180,8 @@ button.btn-sort {
 .btn-run:focus,
 .btn-run:visited,
 .btn-run:active:focus {
-    background-color: #e3cbff;
+    background-color: #c1a5e2;
+    border-radius: 3px;
 }
 
 .btn-menu {
@@ -311,14 +312,4 @@ psk-button[data-type] {
 
 [data-type="mount"] psk-button[data-type="mount"] {
     display: inline;
-}
-
-@media screen and (max-width: 959px) {
-    psk-grid[data-grid-layout="true"] button.wallet-path {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        background: none;
-        border: none;
-    }
 }

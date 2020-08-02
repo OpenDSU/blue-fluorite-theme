@@ -149,22 +149,3 @@ div.menu-icons psk-icon {
     width: 1.1rem;
     text-align: left;
 }
-
-@media screen and (max-width: 959px) {
-    psk-button-group div.button-group-wrapper.add-menu .trigger span.icon {
-        color: rgb(87, 42, 87) !important;
-        font-size: 3rem;
-        font-weight: 100;
-        margin: 0;
-    }
-    .wallet-path>psk-icon span.icon {
-        font-size: 1.5rem;
-        width: 1.5rem;
-    }
-    psk-grid[data-grid-layout="true"] .wallet-path>psk-icon span.icon {
-        font-size: 5rem;
-        width: 100%;
-        text-align: center;
-        margin-left: -3rem;
-    }
-}

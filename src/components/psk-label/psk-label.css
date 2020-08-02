@@ -10,19 +10,6 @@ div.form-group {
     width: 100%;
 }
 
-.item-wrapper,
-.item-wrapper>.col-form-label,
-.info-wrapper,
-.info-wrapper>.col-form-label {
-    display: flex;
-    width: 100%;
-}
-
-.info-wrapper>.col-form-label {
-    justify-content: center;
-    align-items: center;
-}
-
 .btn-menu psk-files-chooser,
 psk-label {
     padding: 0.25rem calc(0.175rem + 1px);
@@ -198,59 +185,3 @@ psk-modal.asset-modal[expanded="true"] .content {
     height: 70vh;
 }
 
-.info-wrapper>.col-form-label .name-wrapper .col-form-label .col-form-label {
-    display: inline-block;
-    position: absolute;
-    vertical-align: middle;
-    width: 80%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-psk-grid[data-grid-layout="true"] .info-wrapper label.col-form-label {
-    font-size: inherit;
-}
-
-psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label .name-wrapper.col-6 {
-    max-width: unset !important;
-    padding: 0;
-}
-
-psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-@media screen and (max-width: 959px) {
-    .info-wrapper>.col-form-label {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-    psk-grid[data-grid-layout="true"] .info-wrapper>.col-form-label {
-        margin-left: -0.5rem;
-    }
-    .info-wrapper label.col-form-label,
-    .wallet-header label.col-form-label {
-        width: 100%;
-        display: inline-block;
-    }
-    .info-wrapper>.col-form-label .name-wrapper label {
-        font-size: 1.15rem;
-    }
-    .info-wrapper>.col-form-label .name-wrapper.col-6,
-    .info-wrapper>.col-form-label psk-date.col-4 {
-        padding: 0;
-    }
-    .info-wrapper>.col-form-label .name-wrapper.col-6 {
-        width: 0;
-    }
-    .info-wrapper>.col-form-label psk-date label {
-        font-size: 0.8rem;
-    }
-    psk-grid[data-grid-layout="true"] .name-wrapper .col-form-label .col-form-label {
-        text-align: center;
-    }
-}
