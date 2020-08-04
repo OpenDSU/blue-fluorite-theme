@@ -10,7 +10,7 @@ div.form-group {
     width: 100%;
 }
 
-.btn-menu psk-files-chooser,
+psk-files-chooser.btn-menu .btn.btn-secondary label,
 psk-label {
     padding: 0.25rem calc(0.175rem + 1px);
 }
@@ -184,4 +184,3 @@ psk-modal.asset-modal object {
 psk-modal.asset-modal[expanded="true"] .content {
     height: 70vh;
 }
-
