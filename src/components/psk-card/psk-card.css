@@ -93,7 +93,7 @@ psk-page div.card-body {
     margin: 0;
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 991px) {
     .receive-dossier div.card-body,
     .share-dossier div.card-body {
         padding-left: 2rem;
@@ -138,23 +138,24 @@ psk-page div.card-body {
     justify-content: flex-start;
 }
 
-psk-card.item-identifier{
-    border-bottom:1px solid #BBBB;
+psk-card.item-identifier {
+    border-bottom: 1px solid #BBBB;
 }
 
-psk-card.item-identifier .card{
+psk-card.item-identifier .card {
     background: transparent;
 }
-psk-card.item-identifier .card .card-body{
+
+psk-card.item-identifier .card .card-body {
     padding-left: 5px;
 }
 
-psk-card.item-identifier .card .card-body psk-icon span{
+psk-card.item-identifier .card .card-body psk-icon span {
     font-size: 1.25rem;
 }
 
-psk-card.item-identifier psk-label label{
-    color:#777;
+psk-card.item-identifier psk-label label {
+    color: #777;
     font-weight: bold;
     font-size: 1.25rem;
 }

@@ -31,7 +31,7 @@ div.container {
     padding: 0;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:991px) {
     .page-title {
         display: none;
     }

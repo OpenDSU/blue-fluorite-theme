@@ -55,14 +55,15 @@ psk-button-group.modal-buttons {
     width: 100%;
 }
 
-psk-button-group .list-group>*{
+psk-button-group .list-group>* {
     min-height: 48px;
 }
 
 psk-button-group.modal-buttons psk-button {
     margin: 0 1rem;
 }
-psk-button-group[opened] psk-files-chooser{
+
+psk-button-group[opened] psk-files-chooser {
     padding-left: 0;
 }
 
@@ -72,7 +73,7 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
     min-width: 12em;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 992px) {
     .button-group-wrapper .list-group,
     .trigger {
         margin-left: 1rem;
@@ -90,7 +91,7 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
     }
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 991px) {
     psk-button-group.add-menu {
         display: flex;
         flex: 1 1 100%;
@@ -157,13 +158,13 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
         color: rgb(87, 42, 87);
         border: none;
     }
-    psk-button-group[opened] psk-label{
+    psk-button-group[opened] psk-label {
         padding: 0;
     }
-    psk-button-group.options-menu[opened] psk-label{
+    psk-button-group.options-menu[opened] psk-label {
         padding: 0 0.5rem 0 0.5rem;
     }
-    psk-button-group[opened] label{
+    psk-button-group[opened] label {
         text-align: center;
     }
     psk-button-group[opened] .add-menu .list-group .btn-menu button.btn.btn-secondary,
@@ -216,11 +217,12 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
     border-radius: 0.5rem;
     z-index: 999999;
 }
-.options-wrapper .item-identifier{
+
+.options-wrapper .item-identifier {
     display: none;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:991px) {
     .options-menu {
         background: rgba(0, 0, 0, 0.5);
     }
@@ -234,17 +236,14 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
         width: 100%;
         justify-content: center;
     }
-
-    .options-wrapper .item-identifier{
+    .options-wrapper .item-identifier {
         display: block;
     }
-
-    .options-menu button.btn-run{
-        border:1px solid #572a57;
+    .options-menu button.btn-run {
+        border: 1px solid #572a57;
         background: #572a57;
-        color:#FFF;
-        padding:5px 10px;
+        color: #FFF;
+        padding: 5px 10px;
         border-radius: 3px;
-
     }
 }
