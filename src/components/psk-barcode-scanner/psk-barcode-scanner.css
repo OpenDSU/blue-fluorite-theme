@@ -4,10 +4,6 @@ psk-barcode-scanner div.card div.card-body {
     margin: 0;
 }
 
-#imageCanvas {
-    position: relative !important;
-}
-
 #camera-source[style="display: block;"]+#scanner_container video {
     display: inline !important;
 }
