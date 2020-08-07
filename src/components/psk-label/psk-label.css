@@ -45,16 +45,6 @@ psk-label.title {
     opacity: 0.8;
 }
 
-psk-label.h1 label,
-psk-label.h2 label,
-psk-label.h3 label,
-psk-label.h4 label,
-psk-label.h5 label,
-psk-label.h6 label {
-    margin: 2rem 1rem 1rem 1rem;
-    font-size: inherit;
-}
-
 psk-label.info,
 psk-label.error,
 psk-label.warning {
