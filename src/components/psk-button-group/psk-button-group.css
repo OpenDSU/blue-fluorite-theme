@@ -195,10 +195,6 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
     pointer-events: none;
     background: rgba(0, 0, 0, 0.15);
 }
-psk-button-group.options-menu[opened='false']{
-    opacity: 0!important;
-    pointer-events: none;
-}
 
 .options-menu[opened] {
     opacity: 1;
