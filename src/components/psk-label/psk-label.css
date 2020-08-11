@@ -20,6 +20,11 @@ label {
     max-width: 100%;
 }
 
+.item-wrapper psk-label,
+.item-wrapper label {
+    max-width: 80%;
+}
+
 .selected .info-wrapper label.col-form-label {
     color: #8197bc;
 }
