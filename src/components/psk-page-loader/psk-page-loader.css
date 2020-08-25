@@ -1,3 +1,7 @@
 psk-page-loader {
     padding: 0!important;
 }
+
+.page_content{
+    height:100%;
+}
