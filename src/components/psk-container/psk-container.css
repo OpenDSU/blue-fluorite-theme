@@ -91,3 +91,10 @@ psk-modal.asset-modal object {
 psk-modal.asset-modal[expanded="true"] .content {
     height: 80vh;
 }
+
+psk-modal .footer .unsaved-file{
+    position: absolute;
+    width:100%;
+    left:0;
+    bottom: 0;
+}
