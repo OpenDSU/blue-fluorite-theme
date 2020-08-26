@@ -1,0 +1,93 @@
+/* External CSS - Rules to be applied outside of shadow dom from psk-modal */
+
+psk-modal>*,
+psk-modal psk-condition>* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+psk-modal psk-condition {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+psk-modal .container>* {
+    padding: 1em;
+}
+
+psk-modal .container>psk-condition,
+psk-modal .container>.modal-buttons {
+    padding: 0;
+    margin: 0;
+}
+
+psk-modal .container>psk-label {
+    font-size: 1.2rem;
+    color: #808080;
+}
+
+psk-modal psk-label,
+psk-modal psk-input psk-label {
+    font-size: 1.1rem;
+    color: #9d9d9d;
+    line-height: 1.5rem;
+}
+
+psk-modal psk-label+input.form-control {
+    margin-top: 0.75rem;
+}
+
+psk-modal psk-for-each {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    vertical-align: middle;
+    padding: 0.5rem 0px;
+}
+
+psk-modal .content-wrapper {
+    flex-direction: column;
+}
+
+psk-modal psk-for-each.wallet-container {
+    flex-direction: column;
+}
+
+psk-modal.move-modal psk-grid psk-label,
+psk-modal.move-modal psk-for-each psk-label {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+psk-modal.asset-modal .content {
+    display: block;
+    text-align: center;
+    padding: 2rem 1rem;
+    height: 50vh;
+    width: 100%;
+}
+
+psk-modal.asset-modal video{
+    height:100%;
+}
+
+psk-modal.asset-modal img {
+    height: -webkit-fill-available;
+}
+
+psk-modal.asset-modal object {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+psk-modal.asset-modal[expanded="true"] .content {
+    height: 80vh;
+}

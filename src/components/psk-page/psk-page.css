@@ -12,11 +12,12 @@
 }
 
 .page-title {
-    width: 100%;
-    line-height: 4.375rem;
-    background-color: #fff;
-    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
-    padding: 16px;
+    /*width: 100%;*/
+    /*line-height: 4.375rem;*/
+    /*background-color: #fff;*/
+    /*box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);*/
+    /*padding: 16px;*/
+    display:none;
 }
 
 .page-title h1 {
