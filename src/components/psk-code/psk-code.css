@@ -58,12 +58,12 @@ pre[class*="language-"]>code {
 .asset-modal code[class*="language"] {
     display: block;
     overflow: scroll;
-    max-height: 30vh;
-    max-width: 80vw;
+    max-height: 45vh;
+    max-width: 95vw;
 }
 
 .asset-modal[expanded='true'] code[class*="language"] {
-    max-height: 60vh;
+    max-height: 75vh;
 }
 
 
