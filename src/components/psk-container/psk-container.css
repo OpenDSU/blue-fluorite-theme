@@ -7,11 +7,11 @@ psk-modal psk-condition>* {
 }
 
 psk-modal psk-condition {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-direction: column;*/
+    /*height: auto;*/
+    /*width: 100%;*/
 }
 
 psk-modal .container>* {
@@ -90,6 +90,15 @@ psk-modal.asset-modal object {
 
 psk-modal.asset-modal[expanded="true"] .content {
     height: 80vh;
+}
+
+psk-modal psk-live-code {
+    max-height: 100%;
+    display: flex;
+}
+
+psk-modal[expanded='true'] psk-live-code{
+    max-height:75vh;
 }
 
 psk-modal .footer .unsaved-file{

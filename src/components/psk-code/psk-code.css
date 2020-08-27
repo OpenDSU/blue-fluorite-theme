@@ -212,23 +212,31 @@ pre .line-highlight {
 }
 
 
+::-webkit-scrollbar-button {
+    display: none;
+}
+
 /* width */
 
 ::-webkit-scrollbar {
-    height: 6px;
+    background-color: #fff;
+    width: 9px;
+    height: 9px;
+    cursor:pointer;
 }
 
 
 /* Track */
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background-color: #e5e5e5;
 }
 
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 3px;
+    background-color: #572a57;
+    border-radius: 8px;
+    border: 2px solid #fff;
 }
