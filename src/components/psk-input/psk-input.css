@@ -9,3 +9,12 @@ div.input-group psk-text-input {
 div.copy-clipboard-input+psk-condition {
     margin-top: -0.5rem;
 }
+
+.marketplace-search-bar {
+    margin: 0 1rem;
+    width: 500px;
+}
+
+.marketplace-search-bar psk-text-input input{
+    border: 1px solid rgba(87, 42, 87, 1);
+}

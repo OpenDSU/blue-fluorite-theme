@@ -159,3 +159,11 @@ psk-card.item-identifier psk-label label {
     font-weight: bold;
     font-size: 1.25rem;
 }
+
+.submit-app-card {
+    display: block;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    max-width: 900px;
+}

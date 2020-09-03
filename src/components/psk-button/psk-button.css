@@ -59,6 +59,59 @@ button.wallet-path {
     flex: 1;
 }
 
+.marketplace-app-card button.wallet-path {
+    margin-bottom: 20px;
+    min-height: 5rem;
+    border: 1px solid rgba(87, 42, 87, 1);
+    border-radius: 5px;
+    padding: 0 0.5rem;
+}
+
+.marketplace-app-card psk-img .image_container {
+    margin-bottom: 0;
+}
+
+.marketplace-app-card .marketplace-app-card-content {
+    width: 80%;
+    float: left;
+    display: contents;
+}
+
+.marketplace-app-card .marketplace-app-card-content psk-img img{
+    height: 98px;
+    width: 98px;
+    margin: 5px;
+}
+
+.marketplace-app-card .marketplace-app-card-controls {
+    float: right;
+    width: 20%;
+}
+
+.marketplace-manager {
+    position: relative;
+    margin-right: 10px;
+}
+
+.marketplace-manager-button button{
+    background-color: rgba(87, 42, 87, 1) !important;
+    color: white !important;
+}
+
+.marketplace-manager-button button:hover{
+    background-color: rgba(127, 61, 127, 1) !important;
+    color: white !important;
+}
+
+.marketplace-manager-button button{
+    margin-bottom: 10px;
+}
+
+.submit-app-button button{
+    max-width: 200px;
+    margin: 0 0 30px 30px;
+}
+
 :host button.btn:disabled {
     color: #b1b1b1;
 }

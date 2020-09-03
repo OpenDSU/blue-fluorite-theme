@@ -25,6 +25,10 @@ label {
     max-width: 80%;
 }
 
+.item-wrapper psk-label.marketplace-app-description {
+    max-width: 95%;
+}
+
 .selected .info-wrapper label.col-form-label {
     color: #8197bc;
 }
@@ -87,4 +91,12 @@ psk-label.success.small label {
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
+}
+
+.marketplace-app-name {
+    font-weight: bold;
+}
+
+.marketplace-app-description {
+    font-size: 10px;
 }
