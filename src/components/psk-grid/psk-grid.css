@@ -218,6 +218,14 @@ psk-grid.add-menu {
     align-items: center;
 }
 
+psk-grid.add-menu .menu-button-controls {
+    display: flex;
+}
+
+psk-grid.add-menu .menu-button-controls > * {
+    margin-right: 10px;
+}
+
 [data-hide-list] {
     display: none !important;
 }

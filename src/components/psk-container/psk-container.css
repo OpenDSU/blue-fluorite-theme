@@ -107,3 +107,13 @@ psk-modal .footer .unsaved-file{
     left:0;
     bottom: 0;
 }
+
+
+.modal-action-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-action-menu > *{
+    margin-left: 10px;
+}
