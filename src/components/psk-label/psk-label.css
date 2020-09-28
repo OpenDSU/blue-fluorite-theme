@@ -27,6 +27,7 @@ label {
 
 .item-wrapper psk-label.marketplace-app-description {
     max-width: 95%;
+    font-size: 18px;
 }
 
 .selected .info-wrapper label.col-form-label {
@@ -95,8 +96,14 @@ psk-label.success.small label {
 
 .marketplace-app-name {
     font-weight: bold;
+    font-size: 24px;
 }
 
 .marketplace-app-description {
     font-size: 10px;
+}
+
+.page-title {
+    font-size: 30px;
+    font-weight: bold;
 }

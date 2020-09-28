@@ -222,6 +222,10 @@ psk-button-group.modal-buttons psk-button button.btn-confirm-secondary {
     display: none;
 }
 
+.right-align {
+    float: right;
+}
+
 @media screen and (max-width:991px) {
     .options-menu {
         background: rgba(0, 0, 0, 0.5);

@@ -18,3 +18,9 @@ div.copy-clipboard-input+psk-condition {
 .marketplace-search-bar psk-text-input input{
     border: 1px solid rgba(87, 42, 87, 1);
 }
+
+@media screen and (max-width:991px) {
+    .marketplace-search-bar {
+        width: 200px;
+    }
+}

@@ -167,3 +167,11 @@ psk-card.item-identifier psk-label label {
     padding: 15px;
     max-width: 900px;
 }
+
+#qrCodeModal psk-barcode-scanner{
+    margin-left: 200px;
+}
+
+#shareQrCodeModal psk-barcode-generator .code_canvas{
+    height: 200px;
+}

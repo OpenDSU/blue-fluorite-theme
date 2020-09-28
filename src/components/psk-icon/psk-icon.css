@@ -149,3 +149,9 @@ div.menu-icons psk-icon {
     width: 1.1rem;
     text-align: left;
 }
+
+@media screen and (max-width: 991px) {
+    .dossier-icon {
+        display: none;
+    }
+}

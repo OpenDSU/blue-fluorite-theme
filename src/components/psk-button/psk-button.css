@@ -78,7 +78,7 @@ button.wallet-path {
 }
 
 .marketplace-app-card .marketplace-app-card-content psk-img img{
-    height: 98px;
+    height: 84px;
     width: 98px;
     margin: 5px;
 }
@@ -86,6 +86,7 @@ button.wallet-path {
 .marketplace-app-card .marketplace-app-card-controls {
     float: right;
     width: 20%;
+    margin-top: 0.5%;
 }
 
 .marketplace-manager {
@@ -366,3 +367,14 @@ psk-button[data-type] {
 [data-type="mount"] psk-button[data-type="mount"] {
     display: inline;
 }
+
+@media screen and (max-width:991px) {
+    .marketplace-app-card .marketplace-app-card-content {
+        width: 60%;
+    }
+
+    .marketplace-app-card .marketplace-app-card-controls {
+        width: 30%;
+    }
+}
+

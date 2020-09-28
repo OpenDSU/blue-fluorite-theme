@@ -218,6 +218,14 @@ psk-grid.add-menu {
     align-items: center;
 }
 
+psk-grid.add-menu .marketplace_align{
+    display: flex;
+}
+
+psk-grid.add-menu .marketplace_align .marketplace-search-bar .form-group{
+    margin-top: 0;
+}
+
 psk-grid.add-menu .menu-button-controls {
     display: flex;
 }
@@ -356,8 +364,9 @@ psk-grid[data-grid-layout="true"] .marketplace-app-card button.wallet-path {
     padding: 10px;
 }
 
-psk-grid[data-grid-layout="true"] .marketplace-app-card .marketplace-app-card-content {
+psk-grid[data-grid-layout="true"] .marketplace-app-card .marketplace-app-card-content.marketplace-card {
     display: flex;
+    margin-bottom: 30px;
 }
 
 psk-grid[data-grid-layout="true"] .marketplace-app-card .marketplace-app-card-controls {
@@ -427,5 +436,9 @@ psk-grid[data-grid-layout="true"] .marketplace-app-card-details-container {
 
     .marketplace-app-card .marketplace-app-card-controls {
         width: 30%;
+    }
+
+    .display-switch-button {
+        display: none;
     }
 }

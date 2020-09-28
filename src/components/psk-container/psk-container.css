@@ -117,3 +117,19 @@ psk-modal .footer .unsaved-file{
 .modal-action-menu > *{
     margin-left: 10px;
 }
+
+.page-title-container {
+    margin: 20px;
+    display: flow-root !important;
+}
+
+.page-title-container psk-button-group .list-group{
+    right: 0;
+    left: auto;
+}
+
+@media screen and (max-width:991px) {
+    .page-title-container {
+        margin-top: 30px;
+    }
+}
