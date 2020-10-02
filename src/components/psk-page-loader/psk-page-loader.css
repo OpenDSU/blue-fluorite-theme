@@ -5,3 +5,12 @@ psk-page-loader {
 .page_content{
     height:100%;
 }
+
+
+.access-marketplace-page,
+.main-container,
+.page-content,
+.container,
+.container-content {
+    height: 100%;
+}

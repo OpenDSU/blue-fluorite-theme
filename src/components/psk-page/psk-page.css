@@ -32,6 +32,14 @@ div.container {
     padding: 0;
 }
 
+.access-marketplace-page,
+.main-container,
+.page-content,
+.container,
+.container-content {
+    height: 100%;
+}
+
 @media screen and (max-width:991px) {
     .page-title {
         display: none;
