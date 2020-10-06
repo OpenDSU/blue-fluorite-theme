@@ -1,72 +1,10 @@
-:host > div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 0;
-    right: 0;
-}
-
-#backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 99998;
-    opacity: 0;
-    pointer-events: none;
-}
-
-:host {
-    display: none;
-}
-
-:host([opened]) {
-    display: block;
-}
-
-:host([opened]) #backdrop,
-:host([opened]) #modal {
-    opacity: 1;
-    pointer-events: all;
-}
-
-#modal {
-    width: 70%;
-    z-index: 99999;
-    background: white;
+:host .psk-modal {
     border-radius: 3px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease-out;
-    text-align: center;
-    vertical-align: middle;
 }
 
-#modal .modal-header button.close {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    opacity: 1;
-}
-
-@media screen and (max-width: 769px) {
-    #modal,
-    #backdrop {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-    }
+:host .psk-modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 :host .modal-header {
@@ -74,6 +12,12 @@
     border-color: #8197bc;
     border-radius: 0;
     padding: 0.75rem 1rem;
+}
+
+:host .modal-header button.close,
+:host .modal-header button.expand .icon {
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 :host .modal-header .toolbar {
@@ -99,32 +43,8 @@
     line-height: 2rem;
 }
 
-:host div.modal-footer {
-    /*border: none;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    display:none;
-}
-
-:host([expanded='true']) #modal,
-:host([expanded='true']) .modal-content,
-:host([expanded='true']) .modal-content .modal-body {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    padding: 0;
-    margin: 0;
-}
-
-:host .expand {
-    border: none;
-    background: none;
-    opacity: 1;
-    color: #ffffff;
-    padding: 0;
-    margin: 0 1em;
+:host .modal-footer {
+    display: none;
 }
 
 /*:host(.asset-modal) ::slotted(:not(psk-label)) {*/
@@ -135,7 +55,7 @@
 /*}*/
 
 :host(.asset-modal) ::slotted(style) {
-    display:none;
+    display: none;
 }
 
 :host(.asset-modal) ::slotted(.footer) {
