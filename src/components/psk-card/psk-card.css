@@ -128,7 +128,6 @@ psk-page div.card-body {
     overflow: auto;
 }
 
-.move-modal .navigation-links>*,
 .move-modal .modal-buttons psk-button {
     width: auto;
 }
@@ -168,10 +167,10 @@ psk-card.item-identifier psk-label label {
     max-width: 900px;
 }
 
-#qrCodeModal psk-barcode-scanner{
+#qrCodeModal psk-barcode-scanner {
     margin-left: 200px;
 }
 
-#shareQrCodeModal psk-barcode-generator .code_canvas{
+#shareQrCodeModal psk-barcode-generator .code_canvas {
     height: 200px;
 }

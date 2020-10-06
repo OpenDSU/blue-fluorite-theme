@@ -110,7 +110,7 @@ psk-grid[data-grid-layout="true"] .wallet-container {
     font-weight: bold;
 }
 
-.navigation-links+psk-grid {
+psk-breadcrumb-navigator+psk-grid {
     min-height: 2rem;
 }
 
@@ -218,11 +218,11 @@ psk-grid.add-menu {
     align-items: center;
 }
 
-psk-grid.add-menu .marketplace_align{
+psk-grid.add-menu .marketplace_align {
     display: flex;
 }
 
-psk-grid.add-menu .marketplace_align .marketplace-search-bar .form-group{
+psk-grid.add-menu .marketplace_align .marketplace-search-bar .form-group {
     margin-top: 0;
 }
 
@@ -230,7 +230,7 @@ psk-grid.add-menu .menu-button-controls {
     display: flex;
 }
 
-psk-grid.add-menu .menu-button-controls > * {
+psk-grid.add-menu .menu-button-controls>* {
     margin-right: 10px;
 }
 
@@ -420,24 +420,19 @@ psk-grid[data-grid-layout="true"] .marketplace-app-card-details-container {
     psk-grid[data-grid-layout="true"] .name-wrapper .col-form-label {
         text-align: center;
     }
-
     psk-grid[data-grid-layout="true"] .marketplace-app-card .marketplace-app-card-content {
         display: block;
         width: 100%;
     }
-
     psk-grid[data-grid-layout="true"] .marketplace-app-card-details-container {
         padding: 0;
     }
-
     psk-grid[data-grid-layout="true"] .marketplace-app-card button.wallet-path {
         border: 1px solid rgba(87, 42, 87, 1);
     }
-
     .marketplace-app-card .marketplace-app-card-controls {
         width: 30%;
     }
-
     .display-switch-button {
         display: none;
     }
