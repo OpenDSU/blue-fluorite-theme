@@ -41,6 +41,11 @@ div.form-check-inline>input:checked+psk-label label::before {
     font-weight: 800;
 }
 
+.todo-row div.form-check-inline>input:checked+psk-label label::before {
+    left: 0.8rem;
+    top: 0.5rem;
+}
+
 div.form-check-inline>input:active {
     border: 2px solid #819bc6;
 }
