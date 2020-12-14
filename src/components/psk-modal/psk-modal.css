@@ -76,3 +76,68 @@
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
+:host(.bpd-modal) .psk-modal-backdrop {
+    filter: invert(1);
+}
+
+:host(.bpd-modal) .modal-header {
+    background: white;
+    border-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+:host(.bpd-modal) .modal-body {
+    background: white;
+    border-color: white;
+}
+
+:host(.bpd-modal) .psk-modal {
+    border: 2px solid rgba(0, 0, 255, 0.3);
+    padding: 20px;
+}
+
+:host(.bpd-modal) .psk-modal .modal-content {
+    background: white;
+}
+
+:host(.bpd-modal) .modal-header psk-label {
+    color: black;
+}
+
+:host(.bpd-modal) .title {
+    color: black;
+}
+
+:host(.bpd-modal) .content {
+    margin: 20px;
+}
+
+:host(.bpd-modal) .bdp-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bdp-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+:host(.bpd-modal) .bdp-right {
+    display: flex;
+}
+
+:host(.bpd-modal) .bpd-input {
+    margin-bottom: 10px;
+}
+
+:host(.bpd-modal) .bpd-input psk-label {
+    display: none;
+}
+
+:host(.bpd-modal) .bpd-qr-code-with-text {
+    background-color: red;
+}

@@ -150,6 +150,10 @@ div.menu-icons psk-icon {
     text-align: left;
 }
 
+.bpd-modal-qr-code-icon {
+    font-size: 22px;
+}
+
 @media screen and (max-width: 991px) {
     .dossier-icon {
         display: none;

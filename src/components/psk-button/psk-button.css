@@ -330,6 +330,27 @@ button.btn-sort {
     align-items: center;
 }
 
+.bpd-organization-menu button {
+    margin-top: 5px;
+}
+
+.bpd-organization-button {
+    background-color: white;
+    border: 0;
+    color: black;
+    font-size: 12px;
+}
+
+.bpd-organization-button-remove {
+    color: red !important;
+}
+
+.bpd-qr-code-with-text {
+    background-color: white;
+    border: white;
+    color: black;
+}
+
 psk-button[data-type] {
     display: none;
 }

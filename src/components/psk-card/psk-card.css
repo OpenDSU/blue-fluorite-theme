@@ -174,3 +174,204 @@ psk-card.item-identifier psk-label label {
 #shareQrCodeModal psk-barcode-generator .code_canvas {
     height: 200px;
 }
+
+.bpd-sub-header {
+    margin: 35px 50px;
+    box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+    border-radius: 8px;
+    padding: 20px 25px 20px 25px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bpd-sub-header .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bpd-dashboard {
+    margin: 50px;
+    box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+    border-radius: 8px;
+    padding: 20px 25px 60px 25px;
+}
+
+.bpd-dashboard-title {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.bpd-header {
+    height: 80px;
+    box-shadow: 0px 6px 30px -9px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 50px;
+    font-size: 18px;
+    color: slategray;
+    font-weight: 400;
+}
+
+.bpd-create-organization {
+    margin: 20px 0;
+}
+
+.bpd-create-organization-button {
+
+}
+
+.bpd-create-organization-button psk-label {
+    font-size: 15px;
+}
+
+.bpd-organization-elements psk-for-each {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bpd-organization-card {
+    display: block;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.bpd-organization-box,
+.bpd-organization-line
+{
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.bpd-organization-box {
+    width: 180px;
+    height: 120px;
+}
+
+.bpd-organization-line {
+    width: 2500px;
+    height: 37px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    color: white;
+    display: flex;
+}
+
+.bpd-organization-line .psk-card,
+.bpd-organization-line .card-body
+{
+    width: 100% !important;
+}
+
+.bpd-organization-card-header {
+    position: absolute;
+    right: 5px;
+}
+
+.bpd-organization-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.bpd-organization-card-content psk-icon {
+    font-size: 60px;
+}
+
+.bpd-organization-card psk-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bpd-row .card-body {
+    display: block;
+    padding: 0;
+}
+
+.bpd-input-row .card-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bpd-row .card-body psk-text-input {
+    margin-right: 10px;
+}
+
+.bpd-row .card-body .form-control {
+    width: 200px;
+}
+
+.bpd-input-row .card-body .form-control {
+    width: 315px;
+}
+
+.bpd-row .card-body .form-group {
+    margin: 0;
+}
+
+.bpd-translucent-buttons psk-button {
+    display: block;
+}
+
+.bpd-translucent-buttons psk-button button {
+    color: #007bff;
+    background-color: white;
+    border-color: white;
+}
+
+.bpd-translucent-buttons .card-body {
+    padding: 0;
+}
+
+.bpd-row .bpd-for-each-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.bpd-row psk-for-each {
+    display: block;
+}
+
+.bpd-creation-row .bpd-delete-button button {
+    color: red;
+    background-color: white;
+    border-color: red;
+}
+
+.bpd-creation-row .bpd-delete-button button:hover {
+    color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.bpd-creation-row psk-button button {
+    width: 225px;
+}
+
+.bpd-creation-row psk-button.bpd-qr-code-with-text button {
+    color: #007bff;
+    background: white;
+    border: 0;
+}
+
+.bpd-creation-row psk-button.bpd-qr-code-with-text button div{
+    display: flex;
+    align-items: center;
+}
+
+.bpd-creation-row psk-button.bpd-qr-code-with-text button psk-icon{
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.bpd-creation-row psk-button.bpd-qr-code-with-text button:hover {
+}
+
+.bpd-creation-row {
+    margin-top: 20px;
+}
