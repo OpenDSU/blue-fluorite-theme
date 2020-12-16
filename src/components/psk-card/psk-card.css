@@ -305,6 +305,10 @@ psk-card.item-identifier psk-label label {
     width: 200px;
 }
 
+.bpd-row .card-body .bpd-seed .form-control {
+    width: 500px;
+}
+
 .bpd-input-row .card-body .form-control {
     width: 315px;
 }

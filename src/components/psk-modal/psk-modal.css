@@ -102,6 +102,7 @@
 
 :host(.bpd-modal) .psk-modal .modal-content {
     background: white;
+    min-height: 500px;
 }
 
 :host(.bpd-modal) .modal-header psk-label {
