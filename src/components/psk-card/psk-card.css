@@ -203,6 +203,10 @@ psk-card.item-identifier psk-label label {
     font-family: sans-serif;
 }
 
+.bpd-tabs .bpd-dashboard-title .col-form-label {
+    width: 100%;
+}
+
 .bpd-header {
     height: 80px;
     box-shadow: 0px 6px 30px -9px rgba(0,0,0,0.75);
@@ -231,6 +235,17 @@ psk-card.item-identifier psk-label label {
     flex-wrap: wrap;
 }
 
+.bpd-buttons-row {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bpd-buttons-row > * {
+    margin-right: 20px;
+}
+
 .bpd-organization-card {
     display: block;
     margin-right: 30px;
@@ -244,7 +259,8 @@ psk-card.item-identifier psk-label label {
     border-radius: 10px;
 }
 
-.bpd-organization-box {
+.bpd-organization-box,
+.bpd-buttons-row .bpd-organization-card .bpd-organization-card-content {
     width: 180px;
     height: 120px;
 }
@@ -305,8 +321,12 @@ psk-card.item-identifier psk-label label {
     width: 200px;
 }
 
+.bpd-row .card-body .bpd-question-title .form-control {
+    width: 600px;
+}
+
 .bpd-row .card-body .bpd-seed .form-control {
-    width: 500px;
+    width: 420px;
 }
 
 .bpd-input-row .card-body .form-control {
@@ -325,20 +345,74 @@ psk-card.item-identifier psk-label label {
     color: #007bff;
     background-color: white;
     border-color: white;
+    width: 225px;
+    margin-bottom: 20px;
 }
 
 .bpd-translucent-buttons .card-body {
     padding: 0;
+    margin-top: 50px;
 }
 
 .bpd-row .bpd-for-each-row {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 10px;
+}
+
+.bpd-flex .card-body{
+    display: flex;
+}
+
+.bpd-margin-north-south button {
+    margin: 10px 0;
+}
+
+.bpd-margin-left.bpd-flex .card-body {
+    margin-left: 200px;
+}
+
+.bpd-seed input {
+    margin-bottom: 5px;
+}
+
+.bpd-row .bpd-for-each-row psk-for-each {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.bpd-row .bpd-for-each-row > psk-button {
+    margin-right: 10px;
+}
+
+.bpd-row .bpd-for-each-row psk-radio-group .form-group > psk-label{
+    display: none;
+}
+
+.bpd-row .bpd-for-each-row psk-condition {
+    margin-bottom: 20px;
 }
 
 .bpd-row psk-for-each {
     display: block;
+}
+
+.bpd-for-each-row .bpd-answer-button {
+    margin: 0 10px 10px 0;
+}
+
+.bpd-for-each-row .bpd-answer-button button.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #54a7ff !important;
+    border-color: #54a7ff !important;
+}
+
+.bpd-for-each-row .bpd-answer-button button {
+
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.bpd-for-each-row .bpd-answer-button psk-label{
+    color: white !important;
 }
 
 .bpd-creation-row .bpd-delete-button button {
@@ -378,4 +452,33 @@ psk-card.item-identifier psk-label label {
 
 .bpd-creation-row {
     margin-top: 20px;
+}
+
+.bpd-progress {
+}
+
+progress, progress[role] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-size: auto;
+    height: 20px;
+}
+
+.skill .card-body {
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.skill .card-body psk-label label {
+    left: 1em;
+    line-height: 1;
+    position: absolute;
+    top: 1em;
+}
+
+::-webkit-progress-value {
+    -webkit-animation: bar-fill 2s;
+    width: 0;
 }

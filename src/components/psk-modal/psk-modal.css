@@ -81,6 +81,10 @@
     filter: invert(1);
 }
 
+:host(.bpd-wide-modal) .psk-modal-backdrop {
+    width: 900px;
+}
+
 :host(.bpd-modal) .modal-header {
     background: white;
     border-color: white;
@@ -103,6 +107,18 @@
 :host(.bpd-modal) .psk-modal .modal-content {
     background: white;
     min-height: 500px;
+}
+
+:host(.bpd-wide-modal[opened]) .psk-modal {
+    width: 900px;
+}
+
+:host(.bpd-wide-modal) .psk-modal {
+    left: 20%;
+}
+
+:host(.bpd-wide-modal) .psk-modal .modal-content {
+    min-width: 700px !important;
 }
 
 :host(.bpd-modal) .modal-header psk-label {
