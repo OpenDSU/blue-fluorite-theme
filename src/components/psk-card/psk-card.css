@@ -197,6 +197,14 @@ psk-card.item-identifier psk-label label {
     padding: 20px 25px 60px 25px;
 }
 
+.bpd-dashboard img {
+    width: 100%;
+    margin-top: 30px;
+}
+.bpd-dashboard .image_container {
+     margin-bottom: 0;
+}
+
 .bpd-dashboard-title {
     font-size: 22px;
     font-weight: bold;
@@ -216,6 +224,10 @@ psk-card.item-identifier psk-label label {
     font-size: 18px;
     color: slategray;
     font-weight: 400;
+}
+
+.bpd-low-header {
+    height: 30px !important;
 }
 
 .bpd-create-organization {
@@ -326,7 +338,7 @@ psk-card.item-identifier psk-label label {
 }
 
 .bpd-row .card-body .bpd-seed .form-control {
-    width: 420px;
+    width: 340px;
 }
 
 .bpd-input-row .card-body .form-control {
@@ -357,6 +369,10 @@ psk-card.item-identifier psk-label label {
 .bpd-row .bpd-for-each-row {
     display: flex;
     justify-content: space-evenly;
+}
+
+.bpd-row .bpd-for-each-row.bpd-kconfig-row {
+    margin-bottom: 5px;
 }
 
 .bpd-flex .card-body{
