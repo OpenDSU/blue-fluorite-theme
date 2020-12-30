@@ -277,6 +277,16 @@ psk-card.item-identifier psk-label label {
     height: 120px;
 }
 
+.bpd-buttons-row.bpd-wide-cards .bpd-organization-card .bpd-organization-card-content {
+    width: 320px;
+    height: 120px;
+}
+
+.bpd-buttons-row.bpd-wide-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .bpd-organization-line {
     width: 2500px;
     height: 37px;
