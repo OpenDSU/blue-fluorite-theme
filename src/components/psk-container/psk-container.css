@@ -60,10 +60,11 @@ psk-modal.move-modal psk-for-each psk-label {
 }
 
 psk-modal.asset-modal .content {
-    display: block;
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding: 2rem 1rem;
-    height: 50vh;
+    height: 90%;
     width: 100%;
 }
 
